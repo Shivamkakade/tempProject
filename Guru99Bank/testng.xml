@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="project.utilities.ExtentListenerClass"></listener>
+        <listener class-name="com.Bank.utilities.ExtentListeners"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="E:/Shivam/Coding/FrameworkDesign/Guru99Bank">
+    <test parallel="classes" thread-count="5" name="E:/Shivam/Coding/FrameworkDesign/FrameworkForGuru99Bank">
         <classes>
-            <class name="project.LoginPageTests.LoginPageTest"/>
-            <class name="project.LoginPageTests.LoginPageTest2"/>
+            <class name="testCases.HomePageTest"/>
+            <class name="testCases.TempTest"/>
         </classes>
     </test>
 </suite>
